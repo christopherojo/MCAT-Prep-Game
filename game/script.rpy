@@ -8,6 +8,9 @@ define p = Character("Pheemail")
 # The game starts here.
 
 label start:
+    
+    $ correct = 0
+    $ total = 0
 
     # Show a background. This uses a placeholder by default, but you can
     # add a file (named either "bg room.png" or "bg room.jpg") to the
@@ -38,8 +41,10 @@ label correct:
     show game girl happy
 
     p "Ding! Ding! Ding! That's one hour less you will have to spend working at McDonalds to cover your medical fees!"
+    
+    $ correct += 1
 
-    show game girl normal
+    call total
 
     return
 
@@ -48,8 +53,17 @@ label wrong:
 
     p "That's tough! You will be stuck working at McDonald's for life!"
 
-    show game girl normal
+    call total
     
+    return
+
+label total:
+    show game girl normal
+
+    $ total += 1
+
+    p "You've gotten [correct] questions correct out of [total] total questions."
+
     return
 
 label question1:
@@ -72,4 +86,19 @@ label question1:
     return
 
 label question2:    
-    p "Couldn't be me working at McDonald's"
+    p "Question 2, coming in hot!"
+
+    menu:
+
+        p "What is the ratio of bacterial to eukaryotic cells in the human body?"
+
+        "1:8":
+            call wrong
+
+        "10:1":
+            call correct
+
+        "100:1":
+            call wrong
+
+    return
