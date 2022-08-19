@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 52: expected statement.
+    action [ui.callsinnewcontext("correct")]
+                                            ^
+
+Ren'Py Version: Ren'Py 8.0.0.22062402
+Thu Aug 18 22:26:46 2022

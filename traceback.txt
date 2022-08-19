@@ -1,0 +1,22 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 70, in script
+    jump back
+ScriptError: could not find label 'back'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 70, in script
+    jump back
+  File "C:\Users\Ojo\Downloads\renpy-8.0.0-sdk\renpy\ast.py", line 1954, in execute
+    rv = renpy.game.script.lookup(target)
+  File "C:\Users\Ojo\Downloads\renpy-8.0.0-sdk\renpy\script.py", line 927, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'back'.
+
+Windows-10-10.0.19044 AMD64
+Ren'Py 8.0.0.22062402
+MCAT Prep Game 1.0
+Tue Aug 16 21:19:06 2022
