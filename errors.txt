@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 101: if statement expects a non-empty block.
-    if quiz_length > 0:
-                       ^
+File "game/script.rpy", line 101: expected statement.
+    correct
+           ^
 
 Ren'Py Version: Ren'Py 8.0.0.22062402
-Fri Aug 19 22:40:54 2022
+Fri Aug 19 22:57:47 2022
