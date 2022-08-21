@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 101: expected statement.
-    correct
-           ^
+File "game/script.rpy", line 70: expected statement.
+    for x in q_list:
+          ^
 
-Ren'Py Version: Ren'Py 8.0.0.22062402
-Fri Aug 19 22:57:47 2022
+Ren'Py Version: Ren'Py 8.0.2.22081402
+Sat Aug 20 22:31:51 2022

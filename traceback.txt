@@ -1,29 +1,20 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 63, in script
-    $ a = renpy.random.choice (q_to_ask)      # randomly pick the question from a list
-  File "game/script.rpy", line 63, in <module>
-    $ a = renpy.random.choice (q_to_ask)      # randomly pick the question from a list
-IndexError: list index out of range
+  File "game/script.rpy", line 65, in script
+    while len(q_to_ask) < quiz_length:        # will work until we'll get enough questions for quiz
+Exception: Possible infinite loop.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 63, in script
-    $ a = renpy.random.choice (q_to_ask)      # randomly pick the question from a list
-  File "C:\Users\Ojo\Downloads\renpy-8.0.0-sdk\renpy\ast.py", line 1111, in execute
-    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
-  File "C:\Users\Ojo\Downloads\renpy-8.0.0-sdk\renpy\python.py", line 1049, in py_exec_bytecode
-    exec(bytecode, globals, locals)
-  File "game/script.rpy", line 63, in <module>
-    $ a = renpy.random.choice (q_to_ask)      # randomly pick the question from a list
-  File "/home/tom/ab/renpy-build/tmp/install.linux-x86_64/lib/python3.9/random.py", line 346, in choice
-  File "C:\Users\Ojo\Downloads\renpy-8.0.0-sdk\renpy\revertable.py", line 217, in __getitem__
-    rv = list.__getitem__(self, index)
-IndexError: list index out of range
+  File "game/script.rpy", line 65, in script
+    while len(q_to_ask) < quiz_length:        # will work until we'll get enough questions for quiz
+  File "C:\Users\ILin2\Downloads\renpy-8.0.2-sdk\renpy\execution.py", line 61, in check_infinite_loop
+    raise Exception("Possible infinite loop.")
+Exception: Possible infinite loop.
 
 Windows-10-10.0.19044 AMD64
-Ren'Py 8.0.0.22062402
+Ren'Py 8.0.2.22081402
 MCAT Prep Game 1.0
-Fri Aug 19 22:47:53 2022
+Sat Aug 20 22:26:10 2022
