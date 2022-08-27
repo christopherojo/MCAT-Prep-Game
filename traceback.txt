@@ -1,20 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 65, in script
-    while len(q_to_ask) < quiz_length:        # will work until we'll get enough questions for quiz
-Exception: Possible infinite loop.
+  File "game/script.rpy", line 130, in script
+    $ q_list = [question0,question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,question11,question12,question13,question14,question15,question16,question17,question18,question19,question20,question21,question22,question23,question24,question25,question26,question27,question28,question29,question30,question31,question32,question33,question34,question35,question36,question37,question38,question39,question40,question41,question42,question43,question44,question45,question46,question47,question48,question49,question50,question51,question52,question53,question54,question55,question56,question57,question58,question59,question60,question61,question62,question63,question64,question65,question66,question67,question68,question69,question70,question71,question72,question73,question74,question75,question76,question77,question78,question79,question80,question81]
+  File "game/script.rpy", line 130, in <module>
+    $ q_list = [question0,question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,question11,question12,question13,question14,question15,question16,question17,question18,question19,question20,question21,question22,question23,question24,question25,question26,question27,question28,question29,question30,question31,question32,question33,question34,question35,question36,question37,question38,question39,question40,question41,question42,question43,question44,question45,question46,question47,question48,question49,question50,question51,question52,question53,question54,question55,question56,question57,question58,question59,question60,question61,question62,question63,question64,question65,question66,question67,question68,question69,question70,question71,question72,question73,question74,question75,question76,question77,question78,question79,question80,question81]
+NameError: name 'question0' is not defined
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 65, in script
-    while len(q_to_ask) < quiz_length:        # will work until we'll get enough questions for quiz
-  File "C:\Users\ILin2\Downloads\renpy-8.0.2-sdk\renpy\execution.py", line 61, in check_infinite_loop
-    raise Exception("Possible infinite loop.")
-Exception: Possible infinite loop.
+  File "game/script.rpy", line 130, in script
+    $ q_list = [question0,question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,question11,question12,question13,question14,question15,question16,question17,question18,question19,question20,question21,question22,question23,question24,question25,question26,question27,question28,question29,question30,question31,question32,question33,question34,question35,question36,question37,question38,question39,question40,question41,question42,question43,question44,question45,question46,question47,question48,question49,question50,question51,question52,question53,question54,question55,question56,question57,question58,question59,question60,question61,question62,question63,question64,question65,question66,question67,question68,question69,question70,question71,question72,question73,question74,question75,question76,question77,question78,question79,question80,question81]
+  File "C:\Users\ILin2\Downloads\renpy-8.0.2-sdk\renpy\ast.py", line 1131, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\ILin2\Downloads\renpy-8.0.2-sdk\renpy\python.py", line 1052, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 130, in <module>
+    $ q_list = [question0,question1,question2,question3,question4,question5,question6,question7,question8,question9,question10,question11,question12,question13,question14,question15,question16,question17,question18,question19,question20,question21,question22,question23,question24,question25,question26,question27,question28,question29,question30,question31,question32,question33,question34,question35,question36,question37,question38,question39,question40,question41,question42,question43,question44,question45,question46,question47,question48,question49,question50,question51,question52,question53,question54,question55,question56,question57,question58,question59,question60,question61,question62,question63,question64,question65,question66,question67,question68,question69,question70,question71,question72,question73,question74,question75,question76,question77,question78,question79,question80,question81]
+NameError: name 'question0' is not defined
 
 Windows-10-10.0.19044 AMD64
 Ren'Py 8.0.2.22081402
 MCAT Prep Game 1.0
-Sat Aug 20 22:26:10 2022
+Sat Aug 27 19:52:19 2022

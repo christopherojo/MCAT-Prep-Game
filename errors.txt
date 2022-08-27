@@ -2,9 +2,10 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 70: expected statement.
-    for x in q_list:
-          ^
+File "game/script.rpy", line 102: invalid syntax
+    question59 = {"category": "Biology", "question": "1.5 Virus Explain the process of extrusion. Explain productive cycle.", "answer": [ ["Extrusion - when the virus uses exocytosis by fusing with plasma membrane, does not kill cell. \"Productive Cycle\" - when it is not killing itelf by lysis to release virus.", "right"], ["Extrusion – process where viral enzymes extracting the viral genome from the capsid. \"Productive Cycle\" – cycle of infection, genome replication, protein production, and release of new virions – extrusion is a key step in this.", "wrong"], ["Extrusion - when a viral genome that is integrated into the host genome is spliced out by viral enzymes. "Productive Cycle" – this allows for new virions to made, continuing the cycle of producing virions.", "wrong" ]]}
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       ^
+    
 
 Ren'Py Version: Ren'Py 8.0.2.22081402
-Sat Aug 20 22:31:51 2022
+Sat Aug 27 19:51:48 2022
